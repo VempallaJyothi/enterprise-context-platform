@@ -10,11 +10,11 @@ sensitivity, and a rule-based assistant that answers questions from live databas
 
 ## Screenshots
 
-![Hero](docs/screenshots/hero.png)
-![Dashboard](docs/screenshots/dashboard.png)
-![Dashboard details](docs/screenshots/dashboard1.png)
-![Classifier](docs/screenshots/classifier.png)
-![Ask the Context Layer](docs/screenshots/ask.png)
+[Hero](docs/screenshots/hero.png)
+[Dashboard](docs/screenshots/dashboard.png)
+[Dashboard details](docs/screenshots/dashboard1.png)
+[Classifier](docs/screenshots/classifier.png)
+[Ask the Context Layer](docs/screenshots/ask.png)
 
 ## Features
 
