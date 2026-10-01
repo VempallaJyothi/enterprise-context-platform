@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 68px);
+  display: grid;
+    grid-template-columns: 0.7fr 1.6fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 75% 40%, rgba(99, 102, 241, 0.25), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(79, 124, 255, 0.15), transparent 40%),
+    var(--bg-primary);
+}
+
+.hero__content {
+  max-width: 560px;
+  animation: hero-fade-in 0.8s ease both;
+}
+
+.hero__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.hero__title-gradient {
+  display: block;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero__btn--primary {
+  background: var(--gradient-main);
+  border: none;
+  color: white;
+  box-shadow: 0 0 24px rgba(99, 102, 241, 0.5);
+}
+
+.hero__btn--primary:hover {
+  box-shadow: 0 0 34px rgba(99, 102, 241, 0.8);
+}
+
+.hero__btn--secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-glow);
+}
+
+.hero__btn--secondary:hover {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1400px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+  }
+
+  .hero__content {
+    max-width: 700px;
+  }
+
+  .hero__visual {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .hero__visual {
+    flex-direction: column;
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+__label__Restricted customer credit card number
+__label__Restricted social security number of employee
+__label__Restricted patient medical diagnosis records
+__label__Restricted bank account password and pin
+__label__Restricted passport and national id number
+__label__Restricted encryption keys and api secrets
+__label__Restricted biometric fingerprint data
+__label__Restricted customer cvv and card expiry
+__label__Restricted health insurance claim details
+__label__Restricted login credentials and passwords
+__label__Restricted aadhaar number and pan card
+__label__Restricted private keys for production servers
+__label__Confidential employee salary and bonus details
+__label__Confidential merger and acquisition plans
+__label__Confidential unreleased financial results
+__label__Confidential customer contracts and pricing terms
+__label__Confidential source code of proprietary product
+__label__Confidential board meeting minutes
+__label__Confidential legal dispute and settlement documents
+__label__Confidential employee performance reviews
+__label__Confidential vendor negotiation strategy
+__label__Confidential trade secrets and patents pending
+__label__Confidential customer personal email and phone
+__label__Confidential quarterly revenue forecast
+__label__Internal project meeting notes
+__label__Internal team holiday calendar
+__label__Internal company org chart
+__label__Internal onboarding guide for new hires
+__label__Internal weekly sprint planning document
+__label__Internal office wifi and building access info
+__label__Internal internal newsletter draft
+__label__Internal it helpdesk process documentation
+__label__Internal training schedule for staff
+__label__Internal department budget overview
+__label__Internal cafeteria menu and office events
+__label__Internal internal wiki and process guides
+__label__Public product catalog and brochure
+__label__Public company press release
+__label__Public published blog articles
+__label__Public job openings and careers page
+__label__Public marketing website content
+__label__Public annual report for shareholders
+__label__Public customer support contact details
+__label__Public open source documentation
+__label__Public social media announcements
+__label__Public pricing page for standard plans
+__label__Public event schedule and webinar invites
+__label__Public frequently asked questions

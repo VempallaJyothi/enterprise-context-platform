@@ -1,0 +1,115 @@
+.context-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.context-layer__tag {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-glow);
+  background: rgba(11, 18, 48, 0.7);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.context-layer__orb-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.context-layer__glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.5), transparent 70%);
+  animation: orb-pulse 3s ease-in-out infinite;
+}
+
+.context-layer__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+}
+
+.context-layer__ring--outer {
+  width: 100%;
+  height: 100%;
+  border-style: dashed;
+  animation: orb-rotate 20s linear infinite;
+}
+
+.context-layer__ring--middle {
+  width: 82%;
+  height: 82%;
+  border-color: rgba(79, 124, 255, 0.6);
+  animation: orb-rotate 14s linear infinite reverse;
+}
+
+.context-layer__core {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 35% 30%, #6d8bff, #3b2a9e 60%, #120a3d);
+  box-shadow:
+    0 0 40px rgba(99, 102, 241, 0.8),
+    inset 0 0 30px rgba(139, 92, 246, 0.6);
+}
+
+.context-layer__title {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.context-layer__subtitle {
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.context-layer__footer {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-glow);
+  background: rgba(11, 18, 48, 0.7);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--accent-blue);
+  text-align: center;
+}
+
+@keyframes orb-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orb-pulse {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,72 @@
+.admin-panel {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(11, 18, 48, 0.7);
+  border: 1px solid var(--border-glow);
+}
+
+.admin-panel__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.admin-panel__form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.admin-panel__input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-glow);
+  background: rgba(5, 8, 22, 0.7);
+  color: var(--text-primary);
+}
+
+.admin-panel__input--icon {
+  width: 80px;
+}
+
+.admin-panel__button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--gradient-main);
+  color: white;
+  font-weight: 600;
+}
+
+.admin-panel__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-panel__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.admin-panel__delete {
+  background: transparent;
+  border: 1px solid rgba(248, 113, 113, 0.5);
+  color: #f87171;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.admin-panel__error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
