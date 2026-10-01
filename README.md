@@ -12,6 +12,7 @@ sensitivity, and a rule-based assistant that answers questions from live databas
 
 ![Hero](docs/screenshots/hero.png)
 ![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard details](docs/screenshots/dashboard1.png)
 ![Classifier](docs/screenshots/classifier.png)
 ![Ask the Context Layer](docs/screenshots/ask.png)
 
@@ -77,7 +78,7 @@ Edit `.env` with your password and a secret key
 ```bash
 python -m app.services.seed          # create tables and sample data
 python -m app.services.create_admin  # create the admin user
-python -m app.ml.train_model          # train the classifier
+python -m app.ml.train_model         # train the classifier
 uvicorn app.main:app --reload
 ```
 API docs: http://127.0.0.1:8000/docs
